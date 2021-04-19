@@ -12,9 +12,3 @@ This project has code snippets for:
 
 ## 4. Progress Dialog (Custom)
 ![screenshot1](screenshots/screen04.png)
-
-
-| | | |
-|:-------------------------:|:-------------------------:|
-|![screenshot1](screenshots/screen01.png) |  ![screenshot1](screenshots/screen01.png)|
-|![screenshot1](screenshots/screen01.png) |  ![screenshot1](screenshots/screen01.png)|
