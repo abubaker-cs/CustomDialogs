@@ -119,6 +119,7 @@ class MainActivity : AppCompatActivity() {
         val customDialog = Dialog(this)
 
         /**
+         *  Custom XML File: dialog_custom.xml
          *  Set the screen content from a layout resource. (Custom XML File)
          *  The resource will be inflated, adding all top-level views to the screen.
          */
@@ -149,6 +150,7 @@ class MainActivity : AppCompatActivity() {
         //
         val customProgressDialog = Dialog(this)
 
+        // Custom XML File: dialog_custom_progress.xml
         /*Set the screen content from a layout resource.
         The resource will be inflated, adding all top-level views to the screen.*/
         customProgressDialog.setContentView(R.layout.dialog_custom_progress)
