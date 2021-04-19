@@ -101,7 +101,8 @@ class MainActivity : AppCompatActivity() {
         val alertDialog: AlertDialog = builder.create()
 
         // CONFIGURE - Set other dialog properties
-        alertDialog.setCancelable(false) // Will not allow user to cancel after clicking on remaining screen area.
+        // Will not allow user to cancel after clicking on remaining screen area outside the Dialog.
+        alertDialog.setCancelable(false)
 
         // INITIALIZE
         alertDialog.show()  // show the dialog to UI
