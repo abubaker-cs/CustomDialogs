@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
         val customDialog = Dialog(this)
 
         /**
-         *  Set the screen content from a layout resource.
+         *  Set the screen content from a layout resource. (Custom XML File)
          *  The resource will be inflated, adding all top-level views to the screen.
          */
         customDialog.setContentView(R.layout.dialog_custom)
