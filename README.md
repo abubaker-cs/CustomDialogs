@@ -1,2 +1,5 @@
 # Custom Dialogs
-Understanding creating custom dialogs in Android Studio (Kotlin)
+This project has templates for following types of Dialogs:
+1. Default
+2. Custom
+3. Progress

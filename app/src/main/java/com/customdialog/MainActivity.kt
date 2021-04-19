@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
+     * TEMPLATE: Default
      * Method is used to show the Alert Dialog.
      */
     private fun alertDialogFunction() {
@@ -108,29 +109,43 @@ class MainActivity : AppCompatActivity() {
 
 
     /**
+     * TEMPLATE - Custom
      * Method is used to show the Custom Dialog.
      */
     private fun customDialogFunction() {
+
+        // Assign Context
         val customDialog = Dialog(this)
-        /*Set the screen content from a layout resource.
-    The resource will be inflated, adding all top-level views to the screen.*/
+
+        /**
+         *  Set the screen content from a layout resource.
+         *  The resource will be inflated, adding all top-level views to the screen.
+         */
         customDialog.setContentView(R.layout.dialog_custom)
+
+        // Button: Submit
         customDialog.tv_submit.setOnClickListener(View.OnClickListener {
             Toast.makeText(applicationContext, "clicked submit", Toast.LENGTH_LONG).show()
             customDialog.dismiss() // Dialog will be dismissed
         })
+
+        // Button: Cancel
         customDialog.tv_cancel.setOnClickListener(View.OnClickListener {
             Toast.makeText(applicationContext, "clicked cancel", Toast.LENGTH_LONG).show()
             customDialog.dismiss()
         })
+
         //Start the dialog and display it on screen.
         customDialog.show()
     }
 
     /**
+     * TEMPLATE - Custom Progress Dialog
      * Method is used to show the Custom Progress Dialog.
      */
     private fun customProgressDialogFunction() {
+
+        //
         val customProgressDialog = Dialog(this)
 
         /*Set the screen content from a layout resource.
