@@ -67,20 +67,20 @@ class MainActivity : AppCompatActivity() {
     private fun alertDialogFunction() {
         val builder = AlertDialog.Builder(this)
 
-        //set title for alert dialog
+        // TITLE - set title for alert dialog
         builder.setTitle("Alert")
 
-        //set message for alert dialog
+        // MESSAGE - set message for alert dialog
         builder.setMessage("This is Alert Dialog. Which is used to show alerts in our app.")
         builder.setIcon(android.R.drawable.ic_dialog_alert)
 
-        //performing positive action
+        // YES (BUTTON) - performing positive action
         builder.setPositiveButton("Yes") { dialogInterface, which ->
             Toast.makeText(applicationContext, "clicked yes", Toast.LENGTH_LONG).show()
             dialogInterface.dismiss() // Dialog will be dismissed
         }
 
-        //performing cancel action
+        // CANCEL (BUTTON) - performing cancel action
         builder.setNeutralButton("Cancel") { dialogInterface, which ->
             Toast.makeText(
                     applicationContext,
@@ -90,17 +90,19 @@ class MainActivity : AppCompatActivity() {
             dialogInterface.dismiss() // Dialog will be dismissed
         }
 
-        //performing negative action
+        // NO (BUTTON) - performing negative action
         builder.setNegativeButton("No") { dialogInterface, which ->
             Toast.makeText(applicationContext, "clicked No", Toast.LENGTH_LONG).show()
             dialogInterface.dismiss() // Dialog will be dismissed
         }
 
-        // Create the AlertDialog
+        // PREPARE - Create the AlertDialog
         val alertDialog: AlertDialog = builder.create()
 
-        // Set other dialog properties
+        // CONFIGURE - Set other dialog properties
         alertDialog.setCancelable(false) // Will not allow user to cancel after clicking on remaining screen area.
+
+        // INITIALIZE
         alertDialog.show()  // show the dialog to UI
     }
 
